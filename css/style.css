@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* debug */
+[class^="col-"] {
+  border: 1px solid black;
+}
+
+[class^="container"] {
+  border: 1px solid green;
+}
+
+/* Utility */
+.wrapper-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.wrapper-70 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.part-grey {
+  background-color: #f3f5f9;
+}
+/* button */
+.btn_signup {
+  padding: 10px;
+  border-radius: 5px;
+  color: #006aff;
+  border: 1px solid #006aff;
+}
+
+.btn_create_account{
+  background-color: #579aff;
+  border: 1px solid #579aff;
+}
+
+.btn_signup_google{
+  color: rgb(103, 103, 103);
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 0px #888888;
+}
+/* Header */
+/* Inizio Header-top */
+.my_header_top {
+  height: 80px;
+  line-height: 80px;
+}
+
+.my_header_top img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.my_header_top i {
+  padding-left: 3px;
+}
+
+.my_header_top a {
+  /* color: #031c4e; */
+  text-decoration: none;
+}
+/* Fine Header-top */
+
+/* Inizio Jumbo-top*/
+.my_jumbo_top {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/bg_jumbotron.svg');
+}
+
+.my_jumbo_top .col_banner {
+  padding: 20px 0;
+}
+.my_jumbo_top .col_banner h1 {
+  font-size: 50px;
+  color: white;
+}
+.my_jumbo_top .col_banner p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.my_jumbo_top .box_signup {
+  margin: 20px 0;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.my_jumbo_top .box_signup .text-blue {
+  margin-top: 0;
+  color: #006aff;
+}
+
+.my_jumbo_top form {
+  padding: 0 3px;
+}
+.my_jumbo_top form .btn{
+  width: 100%;
+}
+.my_jumbo_top form i{
+  color: red;
+  padding-right: 5px;
+}
+.my_jumbo_top form a{
+  color: #006aff;
+}
+/* FIne Jumbo-top */
+
+/* Inizio Jumbo-bottom*/
+.my_jumbo_bottom h5 {
+  color: grey;
+}
+
+.my_jumbo_bottom a {
+  text-decoration: none;
+  color: #006aff;
+}
+
+.my_jumbo_bottom h5{
+  padding: 20px 0;
+}
+.my_jumbo_bottom img{
+  object-fit: contain;
+}
+.my_jumbo_bottom p {
+  padding: 20px 0;
+}
+/* FIne Jumbo-bottom */
+
+/* Main */
+/* Inizio Deploy */
+#deploy .box {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+/* Fine Deploy */
+
+/* Inizio Designed */
+/* Fine Designed */
+
+/* Inizio Features */
+/* Fine Features */
+
+/* Inizio Service */
+}
+/* Fine Service */
+
+/* Footer */
+
+/* Footer help */
+footer .my_footer_help {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 20px;
+  border: 1px solid black;
+}
