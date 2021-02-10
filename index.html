@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Digital Ocean</title>
   </head>
@@ -37,7 +39,7 @@
                   <li><a href="#">Docs</a></li>
                   <li><a href="#">Support<i class="fas fa-angle-down"></i></a></li>
                   <li><a href="#">Login</a></li>
-                  <li><a class="btn_signup" href="#">Sign Up</a></li>
+                  <li><a href="#" class="btn_signup">Sign Up</a></li>
                 </ul>
               </nav>
             </div>
@@ -71,7 +73,10 @@
                         <input class="btn btn-primary btn_create_account" type="button" value="Create your account">
                       </div>
                       <div class="form-group">
-                        <button type="button" class="btn btn-outline-primary btn_signup_google"><i class="fab fa-google"></i>Sign up with google</button>
+                        <button type="button" class="btn btn_signup_google">
+                          <img class="logo_google" src="img/google-icon.png" alt="">
+                          Sign up with google
+                        </button>
                       </div>
                       <p class="text-center">By signing up you agree to the <a href="#"><u>Terms of Service.</u></a></p>
                     </form>
@@ -127,7 +132,7 @@
           <div class="row text-center">
             <div class="wrapper-70">
               <div class="col-md-12">
-                <h2><strong>Deploy and scale seamlessly</strong></h2>
+                <h2>Deploy and scale seamlessly</h2>
                 <p>
                   Our optimized configuration process saves your team time when running and scaling distributed applications, Al & machine learning workloads, hosted services, client websiter, or CI/CD environments.
                 </p>
@@ -145,7 +150,7 @@
                     </nav>
                   </div>
                 </div>
-                <div class="col-sm-4 col-md-4">
+                <div class="col-sm-8 col-md-8">
                   <div class="box text-left">
                     <div class="logo_box">
                       <img src="img/cluster-deploy.svg" alt="Logo Cluster">
@@ -159,19 +164,6 @@
                   </div>
                   <div class="box text-left">
                     <div class="logo_box">
-                      <img src="img/one-click.svg" alt="Logo One-click">
-                    </div>
-                    <div class="title_box">
-                    <h3><strong>One-click apps</strong></h3>
-                    </div>
-                    <div class="p_box">
-                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                  <div class="box text-left">
-                    <div class="logo_box">
                       <img src="img/optimized-compute.svg" alt="Logo Optimized">
                     </div>
                     <div class="title_box">
@@ -181,17 +173,32 @@
                     <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4">
                   <div class="box text-left">
                     <div class="logo_box">
-                      <img src="img/global.svg" alt="Logo GLobal">
+                      <img src="img/one-click.svg" alt="Logo One-click">
                     </div>
                     <div class="title_box">
-                    <h3><strong>Global availability</strong></h3>
+                    <h3><strong>One-click apps</strong></h3>
                     </div>
                     <div class="p_box">
-                    <p>Deploy to any of our data center regions around the world.</p>
+                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
                     </div>
                   </div>
+                  <div class="box text-left">
+                      <div class="logo_box">
+                        <img src="img/global.svg" alt="Logo GLobal">
+                      </div>
+                      <div class="title_box">
+                      <h3><strong>Global availability</strong></h3>
+                      </div>
+                      <div class="p_box">
+                      <p>Deploy to any of our data center regions around the world.</p>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -236,10 +243,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="text-center">The features your business needs</h2>
+              <h2>The features your business needs</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row row_down">
             <div class="wrapper-80">
               <div class="col-sm-4 col-md-4">
                 <img src="img/pred-pricing.svg" alt="Logo Predictable">
@@ -270,43 +277,43 @@
     <section>
       <div id="service">
         <div class="part-blue container-fluid">
-          <div class="row">
+          <div class="row row_top">
             <div class="col-md-12">
-              <h2 class="text-center">Service yout customers aroung the world from 12 regions.</h2>
+              <h2>Service yout customers aroung the world from 12 regions.</h2>
             </div>
           </div>
           <div class="row">
-            <div class="wrapper-70">
+            <div class="wrapper-80">
               <div class="col-md-6">
                 <table class="table">
                   <tbody>
                     <tr>
-                      <th scope="row">AMS2</th>
+                      <td class="row row_top">AMS2</td>
+                      <td class="city city_top">Amsterdam, Netherlands</td>
+                      <td class="speed speed_top">Test speed ></td>
+                    </tr>
+                    <tr>
+                      <td class="row">AMS3</td>
                       <td class="city">Amsterdam, Netherlands</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">AMS3</th>
-                      <td class="city">Amsterdam, Netherlands</td>
-                      <td class="speed">Test speed ></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">BLR1</th>
+                      <td class="row">BLR1</td>
                       <td class="city">Bangalore, India</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">FRA1</th>
+                      <td class="row">FRA1</td>
                       <td class="city">Frankfurt, German</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">LON1</th>
+                      <td class="row">LON1</td>
                       <td class="city">LONDON, UK</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">NYC1</th>
+                      <td class="row">NYC1</td>
                       <td class="city">ANew York, USA</td>
                       <td class="speed">Test speed ></td>
                     </tr>
@@ -317,32 +324,32 @@
                 <table class="table">
                   <tbody>
                     <tr>
-                      <th scope="row">AMS2</th>
+                      <td class="row row_top">AMS2</td>
+                      <td class="city city_top">Amsterdam, Netherlands</td>
+                      <td class="speed speed_top">Test speed ></td>
+                    </tr>
+                    <tr>
+                      <td class="row">AMS3</td>
                       <td class="city">Amsterdam, Netherlands</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">AMS3</th>
-                      <td class="city">Amsterdam, Netherlands</td>
-                      <td class="speed">Test speed ></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">BLR1</th>
+                      <td class="row">BLR1</td>
                       <td class="city">Bangalore, India</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">FRA1</th>
+                      <td class="row">FRA1</td>
                       <td class="city">Frankfurt, German</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">LON1</th>
+                      <td class="row">LON1</td>
                       <td class="city">LONDON, UK</td>
                       <td class="speed">Test speed ></td>
                     </tr>
                     <tr>
-                      <th scope="row">NYC1</th>
+                      <td class="row">NYC1</td>
                       <td class="city">ANew York, USA</td>
                       <td class="speed">Test speed ></td>
                     </tr>
@@ -365,9 +372,19 @@
               <div class="col-md-12">
                 <h2>Development teams love DigitalOcean</h2>
               </div>
-              <div class="col_img col-md-12">
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="wrapper-70">
+              <div class="col-md-12">
                 <i class="fas fa-chevron-left"></i>
-                <img src="img/screenshot-createdroplet.jpg" alt="Screenshot">
+                <div class="box_team">
+                  <img src="img/rocker.png" alt="">
+                  <p>"We have ben able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+                  <p>Rick O'Toole</p>
+                  <p><strong>Co-founder and CTO</strong></p>
+                  <p><a href="#">Read story ></a></p>
+                </div>
                 <i class="fas fa-chevron-right"></i>
               </div>
               <div class="col_circle col-md-12">
@@ -377,7 +394,6 @@
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>

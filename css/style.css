@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
 /* debug */
 /* [class^="col-"] {
   border: 1px solid black;
@@ -16,7 +19,13 @@
 /* Utility */
 body h2{
   font-weight: bold;
+  text-align: center;
 }
+
+a {
+  color: #031c4e;
+}
+
 .wrapper-50{
   width: 50%;
   margin: 0 auto;
@@ -51,9 +60,9 @@ body h2{
 }
 /* button */
 .btn_signup {
+  color: #006aff;
   padding: 10px;
   border-radius: 5px;
-  color: #006aff;
   border: 1px solid #006aff;
 }
 
@@ -71,8 +80,14 @@ body h2{
 /* Header */
 /* Inizio Header-top */
 .my_header_top {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 80px;
   line-height: 80px;
+  background-color: white;
 }
 
 .my_header_top img {
@@ -86,7 +101,6 @@ body h2{
 }
 
 .my_header_top a {
-  /* color: #031c4e; */
   text-decoration: none;
 }
 /* Fine Header-top */
@@ -129,10 +143,14 @@ body h2{
 .my_jumbo_top form .btn{
   width: 100%;
 }
-.my_jumbo_top form i{
-  color: red;
-  padding-right: 5px;
+
+.my_jumbo_top .logo_google {
+  position: relative;
+  left: -30%;
+  height: 10px;
+  width: 10px;
 }
+
 .my_jumbo_top form a{
   color: #006aff;
 }
@@ -153,6 +171,8 @@ body h2{
 }
 .my_jumbo_bottom img{
   object-fit: contain;
+  width: 100px;
+  height: 70px;
 }
 .my_jumbo_bottom p {
   padding: 20px 0;
@@ -169,24 +189,29 @@ body h2{
   list-style: none;
 }
 #deploy nav ul li{
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 #deploy .box {
-  margin-bottom: 20px;
-  max-height: 200px;
+  float: left;
+  width: 50%;
+  border: 1px solid black;
 }
 /* Fine Deploy */
 
 /* Inizio Designed */
 #designed h4 {
-  margin-top: 20px;
+  margin: 20px 0 30px 0;
 }
 
 #designed .col_img i {
   font-size: 20px;
   padding: 0 10px;
 }
+#designed .col_img i:first-child {
+  color: grey;
+}
+
 #designed img {
   width: 50%;
   height: 70%;
@@ -205,6 +230,10 @@ body h2{
 /* Fine Designed */
 
 /* Inizio Features */
+#features .row_down {
+  margin-bottom: 50px;
+}
+
 #features h5 {
   font-weight: bold;
 }
@@ -216,11 +245,22 @@ body h2{
 /* Fine Features */
 
 /* Inizio Service */
+#service .row_top {
+  margin: 30px 0;
+}
+
 #service h2 {
   color: white;
 }
 
-#service .table th {
+#service .table {
+  margin-bottom: 40px;
+}
+#service .table [class$="top"] {
+  border-top: none;
+}
+
+#service .table .row {
   color: white;
 }
 #service .table .city {
@@ -237,14 +277,18 @@ body h2{
   margin-top: 20px;
 }
 
-#development  .col_img i {
-  font-size: 20px;
-  padding: 0 10px;
-}
-#development  img {
+#development .box_team {
+  display: inline-block;
+  height: 230px;
+  width: 300px;
+  padding: 10px;
   margin: 20px 0;
-  width: 40%;
-  height: 20%;
+  background-color: white;
+}
+
+#development img {
+  width: 200px;
+  height: 50px;
 }
 
 #development  .col_circle i {
